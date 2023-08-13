@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# Touchscreen driver configuration
+#
+source "drivers/input/touchscreen/focaltech_touch/Kconfig"
+
+#ifdef OPLUS_FEATURE_TP_BASIC
+source "drivers/input/touchscreen/touch_custom/Kconfig"
+source "drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig"
+#endif /*OPLUS_FEATURE_TP_BASIC*/
